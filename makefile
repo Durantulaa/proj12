@@ -1,20 +1,15 @@
 #to run: make
-#to elminate .o file: make clean
-calc: calcTst.o calc.o stack2.o list.o
-	g++ -o calc calcTst.o calc.o stack2.o list.o
+queueP: queuePTst.o queueP.o queueI.o list.o
+	g++ -o queueP queuePTst.o queueP.o queueI.o list.o
 
-calcTst.o: calcTst.cpp
-	g++ -c calcTst.cpp 
+queuePTst.o: queuePTst.cpp
+	g++ -c queuePTst.cpp 
 
-calc.o: calc.cpp
-	g++ -c calc.cpp 
+queueP.o: queueP.cpp
+	g++ -c queueP.cpp 
 
-stack1.o: stack1.cpp
-	g++ -c stack2.cpp 
+queueI.o: queueI.cpp
+	g++ -c queueI.cpp 
 
-list1.o: list.cpp
+list.o: list.cpp
 	g++ -c list.cpp 
-
-clean :
-	rm *.o
-
