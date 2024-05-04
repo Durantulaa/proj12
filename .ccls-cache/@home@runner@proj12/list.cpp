@@ -92,7 +92,7 @@ void List::PutItemT(itemType itemIn)
  {
   node* newNode = new node;
   newNode->item = itemIn;
-  newNode->next = NULL;; 
+  newNode->next = NULL;
   tail->next = newNode;
   tail = newNode; 
   length++;

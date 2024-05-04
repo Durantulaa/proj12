@@ -1,5 +1,5 @@
 /*
-Team Members:Fady Youssef
+Team Members: Fady Youssef
 Course: CPSC122
 Date Submitted: 05/01/2024
 Assignment Name: Project 12
@@ -14,7 +14,7 @@ PQueue::PQueue(PQueue *q) : QueueI(q) {}
 void PQueue::Enqueue(itemType newItem) {
   // If the queue is empty or newItem is smaller than the head item, insert at
   // head
-  if (IsEmpty() || head == nullptr || newItem < head->item) {
+  if (head == nullptr || newItem < head->item) {
     PutItemH(newItem);
   } else {
     // Find the position to insert newItem
@@ -34,3 +34,4 @@ node *PQueue::PtrTo(itemType newItem) {
   }
   return prev;
 }
+
