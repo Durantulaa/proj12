@@ -34,4 +34,3 @@ node *PQueue::PtrTo(itemType newItem) {
   }
   return prev;
 }
-
